@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound-Responsive Typography</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #FFFFFF;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      text-align: center; /* 가운데 정렬 */
+    }
+    .text-container {
+      display: flex; /* 텍스트를 가로로 나열 */
+      flex-wrap: wrap; /* 줄 바꿈 가능 */
+    }
+    .text-line {
+      color: #0000ff; /* 글자색을 파란색으로 설정 */
+      font-size: 1.5em; /* 텍스트 크기 */
+      line-height: 0.5; /* 행간 조절 */
+      transition: transform 0.1s ease;
+      margin: 0 2px; /* 단어 간격 조절 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 여러 줄로 배치된 단어들 추가 -->
+  <div class="text-container">
+    <div class="text-line">Waves</div>
+    <div class="text-line">come,</div>
+    <div class="text-line">transient</div>
+    <div class="text-line">yet</div>
+    <div class="text-line">always</div>
+    <div class="text-line">there,</div>
+    <div class="text-line">rising,</div>
+    <div class="text-line">falling.</div>
+    <div class="text-line">They</div>
+    <div class="text-line">scatter</div>
+    <div class="text-line">the</div>
+    <div class="text-line">light,</div>
+    <div class="text-line">the</div>
+    <div class="text-line">hue</div>
+    <div class="text-line">of</div>
+    <div class="text-line">the</div>
+    <div class="text-line">water</div>
+    <div class="text-line">ever</div>
+    <div class="text-line">changing</div>
+    <div class="text-line">yet</div>
+    <div class="text-line">always</div>
+    <div class="text-line">familiar,</div>
+    <div class="text-line">always</div>
+    <div class="text-line">blue.</div>
+    <div class="text-line">How</div>
+    <div class="text-line">could</div>
+    <div class="text-line">I</div>
+    <div class="text-line">fail</div>
+    <div class="text-line">to</div>
+    <div class="text-line">love</div>
+    <div class="text-line">them</div>
+    <div class="text-line">as</div>
+    <div class="text-line">they</div>
+    <div class="text-line">dance</div>
+    <div class="text-line">inward</div>
+    <div class="text-line">to</div>
+    <div class="text-line">crash</div>
+    <div class="text-line">on</div>
+    <div class="text-line">the</div>
+    <div class="text-line">pebbles?</div>
+    <div class="text-line">How</div>
+    <div class="text-line">could</div>
+    <div class="text-line">I</div>
+    <div class="text-line">fail</div>
+    <div class="text-line">to</div>
+    <div class="text-line">appreciate</div>
+    <div class="text-line">the</div>
+    <div class="text-line">salty</div>
+    <div class="text-line">air</div>
+    <div class="text-line">or</div>
+    <div class="text-line">the</div>
+    <div class="text-line">cold</div>
+    <div class="text-line">caress</div>
+    <div class="text-line">of</div>
+    <div class="text-line">the</div>
+    <div class="text-line">breeze?</div>
+    <div class="text-line">They</div>
+    <div class="text-line">are</div>
+    <div class="text-line">stalwarts</div>
+    <div class="text-line">of</div>
+    <div class="text-line">this</div>
+    <div class="text-line">ocean-side</div>
+    <div class="text-line">life,</div>
+    <div class="text-line">present</div>
+    <div class="text-line">and</div>
+    <div class="text-line">passing,</div>
+    <div class="text-line">always</div>
+    <div class="text-line">the</div>
+    <div class="text-line">same</div>
+    <div class="text-line">and</div>
+    <div class="text-line">never.</div>
+    
+    <div class="text-line">The</div>
+    <div class="text-line">waves</div>
+    <div class="text-line">break</div>
+    <div class="text-line">around</div>
+    <div class="text-line">the</div>
+    <div class="text-line">rocks</div>
+    <div class="text-line">in</div>
+    <div class="text-line">the</div>
+    <div class="text-line">shallows,</div>
+    <div class="text-line">their</div>
+    <div class="text-line">foam</div>
+    <div class="text-line">crests</div>
+    <div class="text-line">becoming</div>
+    <div class="text-line">chaotic</div>
+    <div class="text-line">lace</div>
+    <div class="text-line">over</div>
+    <div class="text-line">the</div>
+    <div class="text-line">blue.</div>
+    <div class="text-line">Jazz</div>
+    <div class="text-line">watches</div>
+    <div class="text-line">it</div>
+    <div class="text-line">swirl,</div>
+    <div class="text-line">mesmerized,</div>
+    <div class="text-line">as</div>
+    <div class="text-line">if</div>
+    <div class="text-line">the</div>
+    <div class="text-line">movement</div>
+    <div class="text-line">of</div>
+    <div class="text-line">the</div>
+    <div class="text-line">water</div>
+    <div class="text-line">choreographs</div>
+    <div class="text-line">her</div>
+    <div class="text-line">thoughts.</div>
+
+    <div class="text-line">The</div>
+    <div class="text-line">waves</div>
+    <div class="text-line">come</div>
+    <div class="text-line">like</div>
+    <div class="text-line">a</div>
+    <div class="text-line">coiffured</div>
+    <div class="text-line">fifties</div>
+    <div class="text-line">hair</div>
+    <div class="text-line">do,</div>
+    <div class="text-line">over</div>
+    <div class="text-line">pronounced</div>
+    <div class="text-line">in</div>
+    <div class="text-line">the</div>
+    <div class="text-line">arch</div>
+    <div class="text-line">and</div>
+    <div class="text-line">impossible</div>
+    <div class="text-line">to</div>
+    <div class="text-line">avert</div>
+    <div class="text-line">the</div>
+    <div class="text-line">gaze</div>
+    <div class="text-line">from.</div>
+    <div class="text-line">They</div>
+    <div class="text-line">roll</div>
+    <div class="text-line">as</div>
+    <div class="text-line">the</div>
+    <div class="text-line">ocean</div>
+    <div class="text-line">does,</div>
+    <div class="text-line">bringing</div>
+    <div class="text-line">the</div>
+    <div class="text-line">music</div>
+    <div class="text-line">of</div>
+    <div class="text-line">the</div>
+    <div class="text-line">beach,</div>
+    <div class="text-line">the</div>
+    <div class="text-line">percussion</div>
+    <div class="text-line">section</div>
+    <div class="text-line">roaring</div>
+    <div class="text-line">from</div>
+    <div class="text-line">the</div>
+    <div class="text-line">stoney</div>
+    <div class="text-line">bed</div>
+    <div class="text-line">below</div>
+    <div class="text-line">yet</div>
+    <div class="text-line">softened</div>
+    <div class="text-line">by</div>
+    <div class="text-line">the</div>
+    <div class="text-line">water.</div>
+
+    <div class="text-line">The</div>
+    <div class="text-line">waves</div>
+    <div class="text-line">come</div>
+    <div class="text-line">in</div>
+    <div class="text-line">as</div>
+    <div class="text-line">a</div>
+    <div class="text-line">deep</div>
+    <div class="text-line">aquamarine</div>
+    <div class="text-line">and</div>
+    <div class="text-line">turn</div>
+    <div class="text-line">golden</div>
+    <div class="text-line">as</div>
+    <div class="text-line">they</div>
+    <div class="text-line">churn</div>
+    <div class="text-line">the</div>
+    <div class="text-line">sand</div>
+    <div class="text-line">on</div>
+    <div class="text-line">the</div>
+    <div class="text-line">shore.</div>
+    <div class="text-line">Each</div>
+    <div class="text-line">hue</div>
+    <div class="text-line">is</div>
+    <div class="text-line">made</div>
+    <div class="text-line">more</div>
+    <div class="text-line">pretty</div>
+    <div class="text-line">by</div>
+    <div class="text-line">the</div>
+    <div class="text-line">brilliant</div>
+    <div class="text-line">white</div>
+    <div class="text-line">of</div>
+    <div class="text-line">the</div>
+    <div class="text-line">crests,</div>
+    <div class="text-line">drawing</div>
+    <div class="text-line">the</div>
+    <div class="text-line">eye</div>
+    <div class="text-line">away</div>
+    <div class="text-line">from</div>
+    <div class="text-line">the</div>
+    <div class="text-line">cloudless</div>
+    <div class="text-line">sky.</div>
+  </div>
+
+  <script>
+    // 마이크를 통해 소리 데이터를 가져오는 함수
+    async function setupAudio() {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      const analyser = audioContext.createAnalyser();
+      analyser.fftSize = 256;
+
+      const source = audioContext.createMediaStreamSource(stream);
+      source.connect(analyser);
+
+      const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+      function animateText() {
+        analyser.getByteFrequencyData(dataArray);
+        
+        // 평균 볼륨 계산
+        let sum = 0;
+        for (let i = 0; i < dataArray.length; i++) {
+          sum += dataArray[i];
+        }
+        const averageVolume = sum / dataArray.length;
+
+        // 소리 크기에 따라 글자 높이 조절
+        const textLines = document.querySelectorAll('.text-line');
+        textLines.forEach((line, index) => {
+          const offset = Math.sin((Date.now() / 100) + index) * averageVolume * 0.1;
+          line.style.transform = `translateY(${offset}px)`;
+        });
+
+        requestAnimationFrame(animateText);
+      }
+
+      animateText();
+    }
+
+    // 페이지가 로드되면 마이크 설정을 초기화
+    setupAudio().catch(error => {
+      console.error('Error accessing microphone:', error);
+    });
+  </script>
+
+</body>
+</html>
